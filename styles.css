@@ -1,0 +1,72 @@
+/* Full styles.css code */
+
+/* Basic resets and styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #004aad; /* Techfest blue-ish color */
+    position: fixed; /* Sticks to top when scrolling */
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #003366; /* Darker hover effect */
+}
+
+section {
+    padding: 80px 20px 20px; /* Extra top padding for fixed navbar */
+    min-height: 100vh; /* Full height for scrolling */
+    text-align: center;
+}
+
+h1 {
+    color: #004aad;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) { /* For tablets and smaller */
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center;
+    }
+    
+    nav a {
+        padding: 10px; /* Adjust padding for touch */
+    }
+    
+    section {
+        padding: 60px 10px 10px; /* Less padding on sides */
+    }
+}
+
+@media (max-width: 480px) { /* For small phones */
+    h1 {
+        font-size: 1.8em; /* Smaller headings */
+    }
+    
+    p {
+        font-size: 0.9em; /* Adjust text size */
+    }
+}
